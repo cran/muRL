@@ -7,7 +7,11 @@
 \description{Reads an \R dataframe of letter recipient- and position-specific data, such as the output of \code{read.murl}.  Creates a \code{.tex} file of the relevant data and LaTeX code, which can then be processed directly by pdflatex, for example.}
 
 \usage{
-write.murl(object, file.name = "mailmerge.tex", salutation = "Dear", sal.punct = ":", address.string = "123 Venus Flytrap Way\\\\\\\\Cincinnati, OH 45201\\\\\\\\ \\\texttt{jfever@wkrp.edu}\\\\\\\\ \\\texttt{http://www.wkrp.edu/jfever}\\\\\\\\513-555-5664",  letter.file = NULL, letter.text = NULL, valediction = "Sincerely,", signature = "Johnny Fever", opening = "", include.opening = FALSE, verbose = TRUE)
+write.murl(object, file.name = "mailmerge.tex", salutation = "Dear", 
+sal.punct = ":", address.string = "123 Venus Flytrap Way\\\\\\\\Cincinnati, OH 45201\\\\\\\\ \\\\texttt{jfever@wkrp.edu}\\\\\\\\ \\\\texttt{http://www.wkrp.edu/jfever}\\\\\\\\513-555-5664",  
+letter.file = NULL, letter.text = NULL, valediction = "Sincerely,", 
+signature = "Johnny Fever", opening = "", include.opening = FALSE, 
+verbose = TRUE)
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
@@ -34,7 +38,7 @@ If both \code{letter.file} and \code{letter.text} are specified, \code{write.mur
 The opening line specified by argument \code{opening} should be of a grammatical form consistent with ``I write to apply for the position in''.  This phrase will then be followed by customized input, using the fields ``position'', ``dept'', and ``institution'', as in the example in Value below.  To omit such a customized opening line, set the \code{include.opening} toggle to \code{FALSE} (the default).  The example in Value below, and thus each letter, will include only the content defined in the LaTeX-defined ``body''.
 }
 
-\value{a \code{.tex} file of LaTeX code and recipient-specific content, to be processed directly by LaTeX.  Using the included \code{murljobs.csv} sample data, the \code{.tex} file created by \code{write.murl} includes for each position one code snippet that looks like the following:
+\value{A \code{.tex} file of LaTeX code and recipient-specific content, to be processed directly by LaTeX.  Using the included \code{murljobs.csv} sample data, the \code{.tex} file created by \code{write.murl} includes for each position one code snippet that looks like the following:
 
 \preformatted{
 \begin\{letter\}
@@ -47,7 +51,7 @@ The opening line specified by argument \code{opening} should be of a grammatical
 
 }
 
-\author{Ryan T. Moore <\email{rtm@wustl.edu}> and Andrew Reeves <\email{areeves@bu.edu}>}
+\author{Ryan T. Moore \email{rtm@wustl.edu} and Andrew Reeves \email{areeves@bu.edu}}
 
 %% ~Make other sections like Warning with \section{Warning }{....} ~
 

@@ -1,4 +1,18 @@
+Version 0.1-2:
+20 August 2009
+
+- In zip.plot(), added argument 'jitter.factor' to enable jittering.
+- In read.murl(), changed structure of fields.address default argument and implementation.  Currently, provide only the common string to street address column names.
+- In apsahtml2csv(), changed the scraping of "Complete Position Description" data to get all information.
+- In apsahtml2csv(), added line to append blank line to .html files.
+- In zips.tab, added rows for Stony Brook University (11794) and Texas A&M University (77843).
+- In zip.plot(), wrapped as.numeric() around substr(...).
+- In demo(zip.plot), explicitly removed object 'stateMapEnv' from workspace.
+- Edited .Rd files of package and zip.plot() to highlight ZIP code plotting method.
+- Edited .Rd files to make long code entries more legible.
+
+
 Version 0.1-1:
-1 June 2009
+17 July 2009
 
 Initial package creation.

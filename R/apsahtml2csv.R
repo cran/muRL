@@ -4,6 +4,8 @@ apsahtml2csv <- function(directory, file.name, file.ext = ".htm"){
 	
 	for(i in 1:length(jobs)){
 		
+		write("\n", jobs[i], append=T)
+		
 		data<-readLines(jobs[i])
 		
 		data<-data[grep("General Job Listing Information", data):grep("<!-- End main page content -->", data)]
@@ -15,7 +17,7 @@ apsahtml2csv <- function(directory, file.name, file.ext = ".htm"){
 		assign("startdate", getfield(data, "Starting Date", 1, ".*>(.*)<.*",  "\\1"))
 		assign("salary", getfield(data, "Salary:", 1,".*>(.*)</td.*", "\\1" ))
 		assign("region", getfield(data, "Geographic Region", 3, "\t\t", ""))
-		assign("desc", getfield(data, "Complete Position Description", 8, "\t", ""))
+		assign("desc", getdesc(data))
 		assign("email", getfield(data, "E-Mail:", 1, ".*mailto:(.*)\".*", "\\1"))
 		assign("phone", getfield(data, "Phone:", 1, ".*>(.*)<br>.*", "\\1"))
 		assign("contact", getfield(data, "Name of Representative", 1, ".*>(.*)<br>.*", "\\1"))

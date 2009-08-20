@@ -6,3 +6,5 @@ zip.plot(murljobs)
 murljobs <- read.murl(system.file("data", "murljobs.csv", package = "muRL"))
 ## Specify US state to map
 zip.plot(murljobs, map.type = "state", region = "maryland")
+
+rm(stateMapEnv)

@@ -1,7 +1,9 @@
 read.murl <- function(file = "murljobs.csv", header = TRUE, stringsAsFactors = 								FALSE, field.title = "title", field.fname = "fname" , 
-								field.lname = "lname", fields.address = c("address1", 								"address2", "address3"), field.city = "city", 
-								field.state = "state", field.zip = "zipcode", 
-								field.position = "position", field.dept = "dept", 								field.institution = "institution", colClasses = c("character"), ...){
+								field.lname = "lname", fields.address = "address", 
+								field.city = "city", field.state = "state", 
+								field.zip = "zipcode", field.position = "position", 
+								field.dept = "dept", field.institution = "institution",
+								colClasses = c("character"), ...){
 	
 	## read data from local file or webpage
 	if(is.data.frame(file)){
@@ -14,7 +16,7 @@ read.murl <- function(file = "murljobs.csv", header = TRUE, stringsAsFactors = 	
 	names(data)[which(names(data) == field.title)] <- "title"
 	names(data)[which(names(data) == field.fname)] <- "fname"
 	names(data)[which(names(data) == field.lname)] <- "lname"
-	names(data)[which(names(data) %in% fields.address)] <- paste("address", 1:length(fields.address), sep="")
+	names(data)[grep(fields.address, names(data))] <- paste("address", 1:length(grep(fields.address, names(data))), sep="")
 
 	names(data)[which(names(data) == field.city)] <- "city"
 	names(data)[which(names(data) == field.state)] <- "state"

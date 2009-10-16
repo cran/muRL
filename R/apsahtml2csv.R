@@ -9,7 +9,7 @@ apsahtml2csv <- function(directory, file.name, file.ext = ".htm"){
 		data<-readLines(jobs[i])
 		
 		data<-data[grep("General Job Listing Information", data):grep("<!-- End main page content -->", data)]
-
+		
 		assign("listingid", getfield(data, "Listing ID", 1, ".*>(.*)<.*", "\\1"))
 		assign("dateposted", getfield(data, "Date Posted", 2, "\t", ""))
 		assign("typeofinst", getfield(data, "Type of Insitution", 1, ".*>(.*)<.*", "\\1" ))

@@ -8,10 +8,10 @@
 
 \usage{data(zips)}
 \format{
-  A data frame with 33235 observations on 4 variables.
+  A data frame with 33243 observations on 4 variables.
   \describe{
     \item{\code{state}}{a factor containing state and territory abbreviations (with levels \code{AK}, \code{AL}, \ldots, \code{WY}).}
-    \item{\code{zip}}{a factor containing three-digit, four-digit, five-digit, and three-digit-plus-wildcard formatted ZIP codes (with 33180 levels).}
+    \item{\code{zip}}{a factor containing three-digit, four-digit, five-digit, and three-digit-plus-wildcard formatted ZIP codes (with 33188 levels).}
     \item{\code{lat}}{a numeric vector of latitude coordinates.}
     \item{\code{lon}}{a numeric vector of longitude coordinates.}
   }

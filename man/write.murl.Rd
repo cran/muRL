@@ -8,8 +8,7 @@
 
 \usage{
 write.murl(object, file.name = "mailmerge.tex", salutation = "Dear", 
-sal.punct = ":", address.string = "123 Venus Flytrap Way\\\\\\\\Cincinnati, OH 45201\\\\\\\\ \\\\texttt{jfever@wkrp.edu}\\\\\\\\ \\\\texttt{http://www.wkrp.edu/jfever}\\\\\\\\513-555-5664",  
-letter.file = NULL, letter.text = NULL, valediction = "Sincerely,", 
+sal.punct = ":", address.string = "123 Venus Flytrap Way\\\\\\\\Cincinnati, OH 45201\\\\\\\\ \\\\texttt{jfever@wkrp.edu}\\\\\\\\ \\\\texttt{http://www.wkrp.edu/jfever}\\\\\\\\513-555-5664", date = "\\\\today", letter.file = NULL, letter.text = NULL, valediction = "Sincerely,", 
 signature = "Johnny Fever", opening = "", include.opening = FALSE, 
 verbose = TRUE)
 }
@@ -20,6 +19,7 @@ verbose = TRUE)
   \item{salutation}{a character string specifying the salutation to be used in the letters.}
   \item{sal.punct}{a character string specifying the punctuation to be used at the end of the salutation.}
   \item{address.string}{a character string specifying the return address to be used in the letters.  Note that two slashes (\code{\\\\}) should be used for every one usual LaTeX slash.}
+  \item{date}{an optional character string specifying the date.  Defaults to the current date.}
   \item{letter.file}{an optional character string specifying a file containing the body text of the letters.  See Details below for more.}
   \item{letter.text}{an optional character string containing the body text of the letters.  See Details below for more.}
   \item{valediction}{a character string specifying the valediction to be used in the letters.}
@@ -60,7 +60,7 @@ The opening line specified by argument \code{opening} should be of a grammatical
 \examples{
 data(murljobs)
 
-## Create mailmerge.txt required for LaTeX import
+## Create mailmerge.tex required for LaTeX import
 write.murl(murljobs)
 
 ## Specify a file containing the letters' body text
@@ -69,11 +69,11 @@ write.murl(murljobs)
 ## Specify a string containing the letters' body text
 write.murl(murljobs, letter.text = "This is the whole body of my letters.")
 
-## Specify salutation, valediction options (overwrites previous mailmerge.txt)
+## Specify salutation, valediction options (overwrites previous mailmerge.tex)
 write.murl(murljobs, file.name = "mailmerge.tex", salutation = "Greetings", 
 		     sal.punct = ",", valediction = "Truly Yours,", include.opening = FALSE)
 
-## Specify opening line also (overwrites previous mailmerge.txt)
+## Specify opening line also (overwrites previous mailmerge.tex)
 write.murl(murljobs, file.name = "mailmerge.tex", salutation = "Greetings", 
 		     sal.punct = ",", valediction = "Truly Yours,", 
 		     opening = "I am applying for the job in", include.opening = TRUE)

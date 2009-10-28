@@ -1,3 +1,10 @@
+Version 0.1-4:
+28 October 2009
+
+- In write.murl(), added argument 'date' to enable explicit date setting, and to default to \today.
+- Update demo file of write.murl()
+- Edited .Rd files of write.murl()
+
 Version 0.1-3:
 18 October 2009
 

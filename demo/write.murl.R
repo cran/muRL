@@ -1,13 +1,19 @@
 data(murljobs)
 
-## Create mailmerge.txt required for LaTeX import
+## Create mailmerge.tex required for LaTeX import
 write.murl(murljobs)
 
-## Specify salutation, valediction options (overwrites previous mailmerge.txt)
-write.murl(murljobs, file.name = "mailmerge.txt", salutation = "Greetings", 
-				sal.punct = ",", valediction = "Truly Yours,", include.opening = FALSE)
+## Specify a file containing the letters' body text
+## write.murl(murljobs, letter.file = "mybodytext.txt")
 
-## Specify opening line also (overwrites previous mailmerge.txt)
-write.murl(murljobs, file.name = "mailmerge.txt", salutation = "Greetings", 
-				sal.punct = ",", valediction = "Truly Yours,", 
-				opening = "I am applying for the job in", include.opening = TRUE)
+## Specify a string containing the letters' body text
+write.murl(murljobs, letter.text = "This is the whole body of my letters.")
+
+## Specify salutation, valediction options (overwrites previous mailmerge.tex)
+write.murl(murljobs, file.name = "mailmerge.tex", salutation = "Greetings", 
+           sal.punct = ",", valediction = "Truly Yours,", include.opening = FALSE)
+           
+## Specify opening line also (overwrites previous mailmerge.tex)
+write.murl(murljobs, file.name = "mailmerge.tex", salutation = "Greetings", 
+           sal.punct = ",", valediction = "Truly Yours,", 
+           opening = "I am applying for the job in", include.opening = TRUE)

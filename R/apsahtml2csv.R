@@ -27,12 +27,15 @@ apsahtml2csv <- function(directory, file.name, file.ext = ".htm"){
 
 		address <- data[grep("Mailing Address:", data):length(data)]
 		address <- gsub("<br>", "", address)
-		address <- address[-grep("\t", address)]
+		## v0.1-4 address <- address[-grep("\t", address)]
 		address <- address[-grep("<", address)]
-		address <- address[!address==""]
+		## v0.1-4 address <- address[!address==""]
+		address <- grep("[0-9,a-z,A-Z]", address, value = TRUE)
 		address <- gsub("#", "\\\\#", address)
 
 		zip <- address[length(address)]
+		zip <- gsub(" ", "", zip)
+		
 		citystate <- address[length(address)-1]
 		state <- substr(citystate,nchar(citystate)-1, nchar(citystate))
 		

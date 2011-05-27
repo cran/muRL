@@ -1,3 +1,10 @@
+Version 0.1-6:
+27 May 2011
+
+- In apsahtml2csv(), added verbose argument for printing file.name and current working directory.
+- In zips.tab, added 66 new ZIP codes.
+- Edited .Rd files to make long code entries more legible.
+
 Version 0.1-5:
 25 August 2010
 

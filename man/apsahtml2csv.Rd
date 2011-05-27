@@ -5,12 +5,13 @@
 \title{Read, parse, and write to a .csv file APSA eJobs html files}
 \description{Reads American Political Science Association (APSA) ``eJobs'' html files, parses the content of these files into a format for muRL to read, and writes that content to a .csv file.}
 \usage{
-apsahtml2csv(directory, file.name, file.ext = ".htm")
+apsahtml2csv(directory, file.name, file.ext = ".htm", verbose = TRUE)
 }
 \arguments{
   \item{directory}{a character string specifying the directory to which a set of APSA job announcement web pages have been downloaded.}
   \item{file.name}{a character string specifying the name of the file to which the data should be written.}
   \item{file.ext}{a character string specifying the extension of the files from which the data will be harvested.}
+  \item{verbose}{a logical specifying whether the file name and current working directory should be printed.}
 }
 
 \details{

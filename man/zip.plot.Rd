@@ -6,7 +6,8 @@
 \description{Using United States ZIP codes, plots on a map the location of letter recipients.  State or county boundaries may be displayed.}
 \usage{
 zip.plot(data, zip.file = system.file("data", "zips.tab", package = 
-"muRL"), map.type = "state", cex = 1, col = "black", pch = 20, jitter.factor = NULL, ...)
+"muRL"), map.type = "state", cex = 1, col = "black", pch = 20, 
+jitter.factor = NULL, ...)
 }
 \arguments{
   \item{data}{a dataframe with ZIP codes in a column named '\code{zip}', such as the output of \code{read.murl}.}

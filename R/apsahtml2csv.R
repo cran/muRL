@@ -1,4 +1,4 @@
-apsahtml2csv <- function(directory, file.name, file.ext = ".htm"){
+apsahtml2csv <- function(directory, file.name, file.ext = ".htm", verbose = TRUE){
 
 	jobs <- dir(directory, full.names = TRUE)[grep(file.ext, dir(directory))]
 	
@@ -58,4 +58,7 @@ apsahtml2csv <- function(directory, file.name, file.ext = ".htm"){
 	}
 
 	write.csv(myjobs, file = file.name, row.names = FALSE, na = "")
+	if(verbose==TRUE){
+	   	cat("Data stored as file `", file.name, "'.  \nThe current working directory is ", getwd(), "\n", sep="")
+	}
 }

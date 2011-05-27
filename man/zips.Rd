@@ -8,7 +8,7 @@
 
 \usage{data(zips)}
 \format{
-  A data frame with 33243 observations on 4 variables.
+  A data frame with 33309 observations on 4 variables.
   \describe{
     \item{\code{state}}{a factor containing state and territory abbreviations (with levels \code{AK}, \code{AL}, \ldots, \code{WY}).}
     \item{\code{zip}}{a factor containing three-digit, four-digit, five-digit, and three-digit-plus-wildcard formatted ZIP codes (with 33188 levels).}
@@ -18,10 +18,12 @@
 }
 
 \source{The original file upon which \code{zips.tab} is based is available at \code{http://www.census.gov/
-tiger/tms/gazetteer/zcta5.txt}, which is linked from \code{http://www.census.gov/geo/www/gazetteer/places2k.html}.  The US Census Bureau's Geography Division produced these documents.  A few additions to the originals have been made.  See the \code{muRL} CHANGELOG for details.
+tiger/tms/gazetteer/zcta5.txt}, which is linked from \code{http://www.census.gov/
+geo/www/gazetteer/places2k.html}.  The US Census Bureau's Geography Division produced these documents.  A few additions to the originals have been made.  See the \code{muRL} CHANGELOG for details.
 }
 
 \references{Further information about ZIP Code Tabulation Areas (ZCTAs) is available at 
+
 \code{http://www.census.gov/geo/ZCTA/zcta.html}.
 }
 

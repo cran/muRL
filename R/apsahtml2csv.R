@@ -13,7 +13,8 @@ apsahtml2csv <- function(directory, file.name, file.ext = ".htm", verbose = TRUE
 		assign("listingid", getfield(data, "Listing ID", 1, ".*>(.*)<.*", "\\1"))
 		assign("dateposted", getfield(data, "Date Posted", 2, "\t", ""))
 		assign("typeofinst", getfield(data, "Type of Insitution", 1, ".*>(.*)<.*", "\\1" ))
-		assign("position", getfield(data, "Title of Position", 1, ".*>(.*)<.*", "\\1"))
+		assign("position", getfield(data, "Position:", 1, ".*>(.*)<.*", "\\1"))
+		position <- tolower(position)
 		assign("startdate", getfield(data, "Starting Date", 1, ".*>(.*)<.*",  "\\1"))
 		assign("salary", getfield(data, "Salary:", 1,".*>(.*)</td.*", "\\1" ))
 		assign("region", getfield(data, "Geographic Region", 3, "\t\t", ""))
@@ -24,7 +25,10 @@ apsahtml2csv <- function(directory, file.name, file.ext = ".htm", verbose = TRUE
 		assign("web", getfield(data, "Departmental Web Address:", 2, ".*href=\\\"(.*)\\\" tar.*", "\\1"))
 		assign("inst", getfield(data, "Institution Name", 1, ".*>(.*)<br>.*", "\\1"))
 		assign("dept", getfield(data, "Name of Department", 1, ".*>(.*)<br>.*", "\\1"))
-
+		assign("subfield", getfield(data, "Subfield", 5, ".*Primary: (.*)<br>.*", "\\1"))
+		subfield <- tolower(subfield)
+		subfield <- gsub("american", "American", subfield)
+		
 		address <- data[grep("Mailing Address:", data):length(data)]
 		address <- gsub("<br>", "", address)
 		## v0.1-4 address <- address[-grep("\t", address)]
@@ -32,6 +36,7 @@ apsahtml2csv <- function(directory, file.name, file.ext = ".htm", verbose = TRUE
 		## v0.1-4 address <- address[!address==""]
 		address <- grep("[0-9,a-z,A-Z]", address, value = TRUE)
 		address <- gsub("#", "\\\\#", address)
+		
 
 		zip <- address[length(address)]
 		zip <- gsub(" ", "", zip)
@@ -43,7 +48,7 @@ apsahtml2csv <- function(directory, file.name, file.ext = ".htm", verbose = TRUE
 		
 		city <- substr(citystate,1, nchar(citystate)-4)
 		
-		df <- data.frame(listingid = listingid, dateposted = dateposted, typeofinst = typeofinst, position = position, startdate = startdate, salary = salary, region = region, institution = inst, dept = dept, contact = contact, city = city, state=state, zip = zip, phone = phone, www = web, desc = desc)
+		df <- data.frame(listingid = listingid, dateposted = dateposted, typeofinst = typeofinst, position = position, subfield = subfield, startdate = startdate, salary = salary, region = region, institution = inst, dept = dept, contact = contact, city = city, state=state, zip = zip, phone = phone, www = web, desc = desc)
 
 		#Make Address
 		add.vec <- paste("address", 1:(length(address)-2), sep="")

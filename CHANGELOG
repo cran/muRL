@@ -1,3 +1,13 @@
+Version 0.1-7:
+28 August 2012
+
+- In apsahtml2csv(), changed the getfield() grep string for 'position' to include the colon, eliminating ambiguity in that grep.  APSA eJobs appears to use the "Position" fields differently than in the past; 'Position' is usually the level of the job (which is now extracted by apsahtml2csv()), 'Position Title' is often blank, and subfield information has been moved from 'General Job Listing Information' to its own heading, 'Subfields'.
+- In apsahtml2csv(), added a getfield() grep string for 'subfield'.
+- Updated data(murljobs) to be consistent with above.
+- Updated appropriate demo files to be consistent with above.
+- Compacted vignette murlejobs.pdf
+- Added CITATION file.
+
 Version 0.1-6:
 27 May 2011
 

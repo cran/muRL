@@ -2,6 +2,7 @@ read.murl <- function(file = "murljobs.csv", header = TRUE, stringsAsFactors = 	
 								field.lname = "lname", fields.address = "address", 
 								field.city = "city", field.state = "state", 
 								field.zip = "zipcode", field.position = "position", 
+								field.subfield = "subfield",  
 								field.dept = "dept", field.institution = "institution",
 								colClasses = c("character"), ...){
 	
@@ -22,6 +23,7 @@ read.murl <- function(file = "murljobs.csv", header = TRUE, stringsAsFactors = 	
 	names(data)[which(names(data) == field.state)] <- "state"
 	names(data)[which(names(data) == field.zip)] <- "zip"		
 	names(data)[which(names(data) == field.position)] <- "position"
+	names(data)[which(names(data) == field.subfield)] <- "subfield"
 	names(data)[which(names(data) == field.dept)] <- "dept"
 	names(data)[which(names(data) == field.institution)] <- "institution"
 	

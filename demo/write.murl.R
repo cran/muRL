@@ -16,4 +16,4 @@ write.murl(murljobs, file.name = "mailmerge.tex", salutation = "Greetings",
 ## Specify opening line also (overwrites previous mailmerge.tex)
 write.murl(murljobs, file.name = "mailmerge.tex", salutation = "Greetings", 
            sal.punct = ",", valediction = "Truly Yours,", 
-           opening = "I am applying for the job in", include.opening = TRUE)
+           opening = "I am applying for the job as", include.opening = TRUE)

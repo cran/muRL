@@ -1,4 +1,4 @@
-apsahtml2csv <- function(directory, file.name, file.ext = ".htm", verbose = TRUE){
+apsahtml2csvOLD <- function(directory, file.name, file.ext = ".htm", verbose = TRUE){
 
 	jobs <- dir(directory, full.names = TRUE)[grep(file.ext, dir(directory))]
 	
@@ -8,7 +8,7 @@ apsahtml2csv <- function(directory, file.name, file.ext = ".htm", verbose = TRUE
 		
 		data<-readLines(jobs[i])
 		
-		data<-data[grep("General Job Listing Information", data):grep("<!-- END MAIN COLUMN -->", data)]
+		data<-data[grep("General Job Listing Information", data):grep("<!-- End main page content -->", data)]
 		
 		assign("listingid", getfield(data, "Listing ID", 1, ".*>(.*)<.*", "\\1"))
 		assign("dateposted", getfield(data, "Date Posted", 2, "\t", ""))
@@ -47,8 +47,6 @@ apsahtml2csv <- function(directory, file.name, file.ext = ".htm", verbose = TRUE
 		if(state == ", "){state<-""}
 		
 		city <- substr(citystate,1, nchar(citystate)-4)
-    
-    desc <- gsub("        </tr>                  <tr>         <td valign=\"top\" colspan=\"2\">                                   ", "", desc)
 		
 		df <- data.frame(listingid = listingid, dateposted = dateposted, typeofinst = typeofinst, position = position, subfield = subfield, startdate = startdate, salary = salary, region = region, institution = inst, dept = dept, contact = contact, city = city, state=state, zip = zip, phone = phone, www = web, desc = desc)
 

@@ -17,6 +17,9 @@
   }
 }
 
+\details{A few ZIP codes span more than one state, and thus appear more than once in \code{zips}.  See the Examples below for hints on extracting latitude and longitude.
+}
+
 \source{The original file upon which \code{zips.tab} is based is available at \code{http://www.census.gov/
 tiger/tms/gazetteer/zcta5.txt}, which is linked from \code{http://www.census.gov/
 geo/www/gazetteer/places2k.html}.  The US Census Bureau's Geography Division produced these documents.  A few additions to the originals have been made.  See the \code{muRL} CHANGELOG for details.
@@ -34,6 +37,19 @@ data(zips)
 
 summary(zips$lat)
 summary(zips$lon)
+
+## Extracting latitude and longitude.
+## Create a sample survey data frame with an ID variable, 
+##   respondent ZIP code, state, and survey response:
+svy1 <- data.frame(id = c(1,2,3,4), zip = c("10001", "10001", "63130", "380HH"), 
+          state = c("NY", "NY", "MO", "AR"), resp = c(1,2,1,5))
+svy1
+## Since ZIP 380HH spans three states, all are included:
+svy2 <- merge(svy1, zips, by = "zip", all.x = TRUE) 
+svy2
+## Merging by ZIP and state omits the duplicate 380HH entries:
+svy3 <- merge(svy1, zips, by = c("zip", "state"), all.x = TRUE)
+svy3
 }
 
 \keyword{datasets}

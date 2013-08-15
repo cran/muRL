@@ -1,3 +1,8 @@
+Version 0.1-8:
+15 August 2013
+- In apsahtml2csv(), updated first grep defining page end
+- Added examples of extracting latitude and longitude to zips.Rd
+
 Version 0.1-7:
 28 August 2012
 

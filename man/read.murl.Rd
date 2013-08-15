@@ -9,8 +9,8 @@ read.murl(file = "murljobs.csv", header = TRUE, stringsAsFactors =
 FALSE, field.title = "title", field.fname = "fname", field.lname = 
 "lname", fields.address = "address", field.city = "city", 
 field.state = "state", field.zip = "zipcode", field.position = 
-"position", field.subfield = "subfield", field.dept = "dept", field.institution = "institution", 
-colClasses = c("character"), ...)
+"position", field.subfield = "subfield", field.dept = "dept", 
+field.institution = "institution", colClasses = c("character"), ...)
 }
 
 \arguments{

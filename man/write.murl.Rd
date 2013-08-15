@@ -8,9 +8,11 @@
 
 \usage{
 write.murl(object, file.name = "mailmerge.tex", salutation = "Dear", 
-sal.punct = ":", address.string = "123 Venus Flytrap Way\\\\\\\\Cincinnati, OH 45201\\\\\\\\ \\\\texttt{jfever@wkrp.edu}\\\\\\\\ \\\\texttt{http://www.wkrp.edu/jfever}\\\\\\\\513-555-5664", date = "\\\\today", letter.file = NULL, letter.text = NULL, valediction = "Sincerely,", 
-signature = "Johnny Fever", opening = "", include.opening = FALSE, 
-verbose = TRUE)
+sal.punct = ":", address.string = "123 Venus Flytrap Way\\\\\\\\Cincinnati, 
+OH 45201\\\\\\\\ \\\\texttt{jfever@wkrp.edu}\\\\\\\\ 
+\\\\texttt{http://www.wkrp.edu/jfever}\\\\\\\\513-555-5664", 
+date = "\\\\today", letter.file = NULL, letter.text = NULL, valediction = "Sincerely,", 
+signature = "Johnny Fever", opening = "", include.opening = FALSE, verbose = TRUE)
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{

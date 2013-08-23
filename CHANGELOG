@@ -1,3 +1,8 @@
+Version 0.1-9:
+23 August 2013
+- In apsahtml2csv(), update first grep defining page beginning and page end
+- In apsahtml2csv(), eliminated new ambiguity from grep 'Job Listing'
+
 Version 0.1-8:
 15 August 2013
 - In apsahtml2csv(), updated first grep defining page end

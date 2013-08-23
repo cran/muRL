@@ -1,10 +1,9 @@
-311512ff35a3eab5b8d52a940edbbaf3 *CHANGELOG
+a54689d721e8e279956726d186db9d68 *CHANGELOG
 6e6674a07174b510e6fa742ec49f54dc *COPYING
-28c8046c1b0d9ec34cec17f287f10443 *DESCRIPTION
+aace434e5002e4f56a8f8b13602875e4 *DESCRIPTION
 2a19aee85c56d01d570af2e0ba87a46b *LICENSE
 e9b2579c2160cb81bfc9e34fb4eae59a *NAMESPACE
-aaa361844de1327ec8e6cc491dc63f95 *R/apsahtml2csv.R
-d32b7bf6a02271c5e80daa973f9e2062 *R/apsahtml2csvOLD.R
+02320100696d662a88dd88f20d214055 *R/apsahtml2csv.R
 55718fd9ebadc6c365613687dc1cef3d *R/getdesc.R
 95dd8e8a3d85cc9f01419cf6b1ed7695 *R/getfield.R
 b954c71dbf42e2fa446b3500291f5366 *R/read.murl.R
@@ -22,7 +21,7 @@ ccaafbe39e1df9eee42d051ab59a3c32 *inst/doc/murlejobs.pdf
 6d9baae42ddd6b004b9b739cabfaba25 *inst/doc/murljobs.csv
 50328946e514195dd46ba94bb9da5ca0 *inst/doc/murlvign.pdf
 f060d51b55465b2c3b9821763bcb38ea *man/apsahtml2csv.Rd
-9d6a899e4317d56b13e0a7be20324c39 *man/murl-package.Rd
+f34ddadc8e15df5cc89aa2349826ee87 *man/murl-package.Rd
 332c7a9433c0c02193af7faa3a9e5627 *man/murljobs.Rd
 86f1b218a8424dcf106aead0a21995d7 *man/read.murl.Rd
 6c562a888fc9a1df1fa2339cc75a2dd4 *man/write.murl.Rd

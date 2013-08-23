@@ -1,8 +1,8 @@
 Package: muRL
 Type: Package
 Title: Mailmerge using R, LaTeX, and the Web
-Version: 0.1-8
-Date: 2013-08-15
+Version: 0.1-9
+Date: 2013-08-23
 Author: Ryan T. Moore <rtm@wustl.edu> and Andrew Reeves <areeves@bu.edu>
 Maintainer: Ryan T. Moore <rtm@wustl.edu>
 Depends: maps
@@ -10,7 +10,7 @@ Description: Provides mailmerge methods for reading spreadsheets of addresses an
 License: GPL-2 | file LICENSE
 URL: http://rtm.wustl.edu/software.muRL.htm
 LazyLoad: yes
-Packaged: 2013-08-16 11:38:35 UTC; rtm
+Packaged: 2013-08-23 15:54:56 UTC; rtm
 NeedsCompilation: no
 Repository: CRAN
-Date/Publication: 2013-08-16 15:42:05
+Date/Publication: 2013-08-23 18:46:18

@@ -3,3 +3,6 @@ export( read.murl,
 	zip.plot,
 	apsahtml2csv
 )
+import(maps)
+import(utils)
+import(graphics)

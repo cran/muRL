@@ -13,10 +13,10 @@ Provides mailmerge methods for reading spreadsheets of addresses and other relev
 \tabular{ll}{
 Package: \tab muRL\cr
 Type: \tab Package\cr
-Version: \tab 0.1-9\cr
-Date: \tab 2013-08-23\cr
+Version: \tab 0.1-10\cr
+Date: \tab 2015-07-27\cr
 License: \tab GPL version 2.0 or newer \cr
-URL: \tab \url{http://rtm.wustl.edu/software.muRL.htm} \cr
+URL: \tab \url{http://nw18.american.edu/~rtm/software.muRL.htm} \cr
 LazyLoad: \tab yes\cr
 }
 
@@ -25,9 +25,9 @@ LazyLoad: \tab yes\cr
 }
 
 \author{
-Ryan T. Moore \email{rtm@wustl.edu} and Andrew Reeves \email{areeves@bu.edu}
+Ryan T. Moore \email{rtm@american.edu} and Andrew Reeves \email{reeves@wustl.edu}
 
-Maintainer: Ryan T. Moore <rtm@wustl.edu>
+Maintainer: Ryan T. Moore <rtm@american.edu>
 }
 
 %\references{}

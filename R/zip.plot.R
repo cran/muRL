@@ -6,7 +6,7 @@ zip.plot <- function(data, zip.file = system.file("data", "zips.tab", package = 
 	
 	data.z <- merge(data, zips[,c("zip", "lat", "lon")], by.x = "zip", by.y = "zip", all.x = TRUE)
 
-	map(map.type, ...)
+	maps::map(map.type, ...)
 	if(!(is.null(jitter.factor))){
 		data.z$lon <- jitter(data.z$lon, factor = jitter.factor)
 		data.z$lat <- jitter(data.z$lat, factor = jitter.factor)

@@ -28,7 +28,7 @@ The full paragraph description is stored in a column named \code{desc}.  Due to 
 }
 
 \author{
-Ryan T. Moore \email{rtm@wustl.edu} and Andrew Reeves \email{areeves@bu.edu}
+Ryan T. Moore \email{rtm@american.edu} and Andrew Reeves \email{reeves@wustl.edu}
 }
 
 \seealso{\code{\link{read.murl}}}

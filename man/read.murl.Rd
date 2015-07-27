@@ -46,7 +46,7 @@ If the input file is an \R dataframe, then the argument \code{...} is ignored.
 %% ~put references to the literature/web site here ~
 %%}
 
-\author{Ryan T. Moore \email{rtm@wustl.edu} and Andrew Reeves \email{areeves@bu.edu}}
+\author{Ryan T. Moore \email{rtm@american.edu} and Andrew Reeves \email{reeves@wustl.edu}}
 
 %% ~Make other sections like Warning with \section{Warning }{....} ~
 

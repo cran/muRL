@@ -1,3 +1,9 @@
+Version 0.1-10:
+27 July 2015
+- Updated NAMESPACE to import packages `utils' and `graphics'
+- Updated NAMESPACE to require package `maps' to support zip.plot() demo
+- Updated Maintainer and Author addresses
+
 Version 0.1-9:
 23 August 2013
 - In apsahtml2csv(), update first grep defining page beginning and page end

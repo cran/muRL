@@ -33,7 +33,7 @@ To plot only a region within the selected \code{map.type}, include the \code{map
 }
 
 \author{
-Ryan T. Moore \email{rtm@wustl.edu} and Andrew Reeves \email{areeves@bu.edu}
+Ryan T. Moore \email{rtm@american.edu} and Andrew Reeves \email{reeves@wustl.edu}
 }
 
 \seealso{\code{\link{read.murl}}, \code{\link{zips}}}

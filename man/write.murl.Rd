@@ -53,7 +53,7 @@ The opening line specified by argument \code{opening} should be of a grammatical
 
 }
 
-\author{Ryan T. Moore \email{rtm@wustl.edu} and Andrew Reeves \email{areeves@bu.edu}}
+\author{Ryan T. Moore \email{rtm@american.edu} and Andrew Reeves \email{reeves@wustl.edu}}
 
 %% ~Make other sections like Warning with \section{Warning }{....} ~
 

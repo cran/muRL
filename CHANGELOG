@@ -1,3 +1,9 @@
+Version 0.1-11:
+12 June 2017
+- move sample .csv data into inst/extdata
+- apsahtml2csv() now gets first subfield listed
+- Cleaned up apsahtml2csv() reading of description
+
 Version 0.1-10:
 27 July 2015
 - Updated NAMESPACE to import packages `utils' and `graphics'

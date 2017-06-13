@@ -5,4 +5,5 @@ export( read.murl,
 )
 import(maps)
 import(utils)
+import(stringr)
 import(graphics)

@@ -55,7 +55,7 @@ If the input file is an \R dataframe, then the argument \code{...} is ignored.
 
 \examples{
 ## Specify path to .csv database of sample addresses
-fpath <- system.file("data", "murljobs.csv", package = "muRL")
+fpath <- system.file("extdata", "murljobs.csv", package = "muRL")
 
 murljobs <- read.murl(fpath)
 }

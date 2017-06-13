@@ -5,7 +5,7 @@
 \title{Plot US ZIP codes, including locations of letter recipients.}
 \description{Using United States ZIP codes, plots on a map the location of letter recipients.  State or county boundaries may be displayed.}
 \usage{
-zip.plot(data, zip.file = system.file("data", "zips.tab", package = 
+zip.plot(data, zip.file = system.file("extdata", "zips.tab", package = 
 "muRL"), map.type = "state", cex = 1, col = "black", pch = 20, 
 jitter.factor = NULL, ...)
 }
@@ -44,7 +44,7 @@ data(murljobs)
 zip.plot(murljobs)
 
 ## Read .csv to murl object
-murljobs <- read.murl(system.file("data", "murljobs.csv", package = "muRL"))
+murljobs <- read.murl(system.file("extdata", "murljobs.csv", package = "muRL"))
 ## Specify US state to map
 zip.plot(murljobs, map.type = "state", region = "maryland")
 }

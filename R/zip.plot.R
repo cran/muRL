@@ -1,4 +1,4 @@
-zip.plot <- function(data, zip.file = system.file("data", "zips.tab", package = "muRL"), map.type = "state", cex = 1, col = "black", pch = 20, jitter.factor = NULL, ...){
+zip.plot <- function(data, zip.file = system.file("extdata", "zips.tab", package = "muRL"), map.type = "state", cex = 1, col = "black", pch = 20, jitter.factor = NULL, ...){
 	
 	data$zip <- as.numeric(substr(data$zip, 1, 5))
 	

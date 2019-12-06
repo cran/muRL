@@ -13,8 +13,8 @@ Provides mailmerge methods for reading spreadsheets of addresses and other relev
 \tabular{ll}{
 Package: \tab muRL\cr
 Type: \tab Package\cr
-Version: \tab 0.1-11\cr
-Date: \tab 2017-06-12\cr
+Version: \tab 0.1-12\cr
+Date: \tab 2019-12-05\cr
 License: \tab GPL version 2.0 or newer \cr
 URL: \tab \url{http://www.ryantmoore.org/software.murl.html} \cr
 LazyLoad: \tab yes\cr

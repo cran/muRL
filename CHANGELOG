@@ -1,24 +1,36 @@
+Version 0.1-12:
+
+- In write.murl(), add argument 'pad_if_zip4' to add leading 0 to 4-character ZIP codes.
+- In write.murl(), add argument 'closing' for custom closing text.
+- In write.murl(), add argument 'include.closing' for including custom closing text.
+- In write.murl(), add argument 'contact_me'.
+- In write.murl(), add argument 'margin_geometry'.
+- In read.murl(), add argument 'field.instShort', for short institution names for the closing.
+- Update to GPLv3.
+- Remove sample .csv from /data/ since it is in /inst/extdata/ now.
+- Update demo file for zip.plot().
+
 Version 0.1-11:
 12 June 2017
-- move sample .csv data into inst/extdata
-- apsahtml2csv() now gets first subfield listed
-- Cleaned up apsahtml2csv() reading of description
+- move sample .csv data into inst/extdata.
+- apsahtml2csv() now gets first subfield listed.
+- Cleaned up apsahtml2csv() reading of description.
 
 Version 0.1-10:
 27 July 2015
-- Updated NAMESPACE to import packages `utils' and `graphics'
-- Updated NAMESPACE to require package `maps' to support zip.plot() demo
-- Updated Maintainer and Author addresses
+- Updated NAMESPACE to import packages `utils' and `graphics'.
+- Updated NAMESPACE to require package `maps' to support zip.plot() demo.
+- Updated Maintainer and Author addresses.
 
 Version 0.1-9:
 23 August 2013
-- In apsahtml2csv(), update first grep defining page beginning and page end
-- In apsahtml2csv(), eliminated new ambiguity from grep 'Job Listing'
+- In apsahtml2csv(), update first grep defining page beginning and page end.
+- In apsahtml2csv(), eliminated new ambiguity from grep 'Job Listing'.
 
 Version 0.1-8:
 15 August 2013
-- In apsahtml2csv(), updated first grep defining page end
-- Added examples of extracting latitude and longitude to zips.Rd
+- In apsahtml2csv(), updated first grep defining page end.
+- Added examples of extracting latitude and longitude to zips.Rd.
 
 Version 0.1-7:
 28 August 2012
@@ -27,7 +39,7 @@ Version 0.1-7:
 - In apsahtml2csv(), added a getfield() grep string for 'subfield'.
 - Updated data(murljobs) to be consistent with above.
 - Updated appropriate demo files to be consistent with above.
-- Compacted vignette murlejobs.pdf
+- Compacted vignette murlejobs.pdf.
 - Added CITATION file.
 
 Version 0.1-6:

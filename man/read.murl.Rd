@@ -10,7 +10,8 @@ FALSE, field.title = "title", field.fname = "fname", field.lname =
 "lname", fields.address = "address", field.city = "city", 
 field.state = "state", field.zip = "zipcode", field.position = 
 "position", field.subfield = "subfield", field.dept = "dept", 
-field.institution = "institution", colClasses = c("character"), ...)
+field.institution = "institution", field.instShort = "instShort", 
+colClasses = c("character"), ...)
 }
 
 \arguments{
@@ -28,6 +29,7 @@ field.institution = "institution", colClasses = c("character"), ...)
   \item{field.subfield}{a character string giving the name of the column containing recipient-specific information, such as the specific subfield for which one is applying.}
   \item{field.dept}{a character string giving the name of the column containing additional information, such as the specific department offering the position for which one is applying.}
   \item{field.institution}{a character string giving the name of the column containing additional information, such as the institution offering the position for which one is applying.}
+  \item{field.instShort}{a character string giving the name of the column containing the shortened version of the name of the institution.  Optionally used in the closing.}
   \item{colClasses}{a vector of character strings indicating the class of each column.  Using \code{c(``character'')} ensures leading zeros in, for example, ZIP codes will be preserved.}
   \item{\dots}{other arguments to pass to \code{read.csv()} if the input file is a .csv file.}
 }

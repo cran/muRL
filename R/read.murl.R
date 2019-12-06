@@ -3,7 +3,8 @@ read.murl <- function(file = "murljobs.csv", header = TRUE, stringsAsFactors = 	
 								field.city = "city", field.state = "state", 
 								field.zip = "zipcode", field.position = "position", 
 								field.subfield = "subfield",  
-								field.dept = "dept", field.institution = "institution",
+								field.dept = "dept", 
+								field.institution = "institution", field.instShort = "instShort",
 								colClasses = c("character"), ...){
 	
 	## read data from local file or webpage
@@ -26,6 +27,7 @@ read.murl <- function(file = "murljobs.csv", header = TRUE, stringsAsFactors = 	
 	names(data)[which(names(data) == field.subfield)] <- "subfield"
 	names(data)[which(names(data) == field.dept)] <- "dept"
 	names(data)[which(names(data) == field.institution)] <- "institution"
+	names(data)[which(names(data) == field.instShort)] <- "instShort"
 	
 	## Which are not == 5, 10?
 	n510 <- which(!(nchar(data$zip) %in% c(5,10)))
@@ -43,7 +45,7 @@ read.murl <- function(file = "murljobs.csv", header = TRUE, stringsAsFactors = 	
 	
 	allns <- sort(unique(c(n510, nhyp, yhypn)))
 	
-	if(length(allns)>0){
+	if(length(allns) > 0){
 		warning("At least one postal code is of non-standard (US) form.  Please check postal code(s) of unit(s) ", paste(allns, collapse=" "), " and respecify if needed.")
 	}
 		return(data)	

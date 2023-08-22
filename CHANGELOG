@@ -1,3 +1,7 @@
+Version 0.1-13:
+
+- Edit CITATION and manual page for package to comply with new standards.
+
 Version 0.1-12:
 
 - In write.murl(), add argument 'pad_if_zip4' to add leading 0 to 4-character ZIP codes.

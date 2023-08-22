@@ -2,6 +2,8 @@
 \Rdversion{1.1}
 \alias{murl-package}
 \alias{murl}
+\alias{muRL-package}
+
 \docType{package}
 \title{Mailmerge methods for reading addresses, creating letters, and mapping US ZIP codes of recipients}
 
@@ -13,10 +15,10 @@ Provides mailmerge methods for reading spreadsheets of addresses and other relev
 \tabular{ll}{
 Package: \tab muRL\cr
 Type: \tab Package\cr
-Version: \tab 0.1-12\cr
-Date: \tab 2019-12-05\cr
+Version: \tab 0.1-13\cr
+Date: \tab 2023-08-21\cr
 License: \tab GPL version 2.0 or newer \cr
-URL: \tab \url{http://www.ryantmoore.org/software.murl.html} \cr
+URL: \tab \url{https://www.ryantmoore.org/software.murl.html} \cr
 LazyLoad: \tab yes\cr
 }
 

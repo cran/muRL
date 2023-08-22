@@ -1,7 +1,6 @@
 \name{apsahtml2csv}
 \Rdversion{1.1}
 \alias{apsahtml2csv}
-%- Also NEED an '\alias' for EACH other topic documented here.
 \title{Read, parse, and write to a .csv file APSA eJobs html files}
 \description{Reads American Political Science Association (APSA) ``eJobs'' html files, parses the content of these files into a format for muRL to read, and writes that content to a .csv file.}
 \usage{

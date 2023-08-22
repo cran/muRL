@@ -1,17 +1,19 @@
-citHeader("To cite package 'muRL' in publications use:")
+# Generate citation from DESCRIPTION:
+cite_pkg <- citation(auto = meta)
+
+# citHeader("To cite package 'muRL' in publications use:")
      
-year <- sub(".*(2[[:digit:]]{3})-.*", "\\1", meta$Date, perl = TRUE)
-vers <- paste("R package version", meta$Version)
+# year <- sub(".*(2[[:digit:]]{3})-.*", "\\1", meta$Date, perl = TRUE)
+# vers <- paste("R package version", meta$Version)
      
-citEntry(entry="Manual",
-         title = "muRL: Mailmerge using R, LateX, and the Web",
-         author = personList(as.person("Ryan T. Moore"),
-                                  as.person("Andrew Reeves")),
-    	 year = year,
-         note = vers,
-     
-         textVersion =
-         paste("Moore, Ryan T. and Andrew Reeves (",
-                year,
-                "). muRL: Mailmerge using R, LateX, and the Web. ",
-                vers, ".", sep=""))
+#citEntry(entry="Manual",
+#         title = "muRL: Mailmerge using R, LateX, and the Web",
+#         author = personList(as.person("Ryan T. Moore"),
+#                                  as.person("Andrew Reeves")),
+#    	 year = year,
+#         note = vers,
+#         textVersion =
+#         paste("Moore, Ryan T. and Andrew Reeves (",
+#                year,
+#                "). muRL: Mailmerge using R, LateX, and the Web. ",
+#                vers, ".", sep=""))
